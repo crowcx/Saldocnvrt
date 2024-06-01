@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaldoConverter - Better than Rio Ajg</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .conversionForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+    <h1 style="text-align: center; padding: 0px 5px 0px 5px;">SaldoConverter</h1>
+    <p style="text-align: center; padding: 0px 5px 0px 5px;">Pernahkah anda, ingin mengubah dosa kalian yang banyak menjadi duit? melihat tutor
+    dari Rio Ajg ternyata clickbait? tenang bro, gw punya counternya dan ini 100% aselik no faqhe <br> <br>
+    cukup masukin aja nomor Telepon dan jumlah dosa lu kesini dan bakal diconvert</p>
+<form id="conversionForm" class="conversionForm">
+    <fieldset>
+        <legend>Konversi Dosa ke Saldo</legend>
+        <label for="phoneNumber">Nomor Telepon:</label>
+        <input type="number" id="phoneNumber" placeholder="ex: 081234567890" name="phoneNumber" required>
+
+        <label for="sinAmount">Jumlah Dosa:</label>
+        <input type="number" id="sinAmount" placeholder="69420" name="sinAmount" min="1" required>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+<script>
+    document.getElementById('conversionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const phoneNumber = document.getElementById('phoneNumber').value;
+        const sinAmount = document.getElementById('sinAmount').value;
+        const saldo = sinAmount * 69;
+
+        const message = `${phoneNumber}: saldo sebesar ${saldo} sedang diproses. tunggu hingga 48 jam untuk menerimanya.`;
+
+        if (confirm(message)) {
+        window.location.href = 'https://s.id/NGstore';
+        }
+    });
+</script>
+
+<p style="text-align: center; padding: 0px 5px 0px 5px;">&copy; NaughtyGoat. web ini cuma buat candaan</p>
+<p style="text-align: center; padding: 0px 5px 0px 5px;">gaada satupun nomor hape kalian yang gw tilep</p>
+</body>
+</html>
